@@ -1,0 +1,24 @@
+{
+  "deals": [
+    {
+      "title": "EA Sports FC 24",
+      "price": "$14.99",
+      "originalPrice": "$69.99",
+      "discount": "-78%",
+      "genre": "Sports",
+      "gamePass": false,
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6uqg.jpg",
+      "url": "https://www.xbox.com"
+    },
+    {
+      "title": "Cyberpunk 2077",
+      "price": "$29.99",
+      "originalPrice": "$49.99",
+      "discount": "-40%",
+      "genre": "RPG",
+      "gamePass": false,
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mwt.jpg",
+      "url": "https://www.xbox.com"
+    }
+  ]
+}
