@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Xbox releases on sale | Xbox Deals</title>
+<meta name="description" content="Recently released Xbox games that are on sale.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-view="new">
+<div class="wrap">
+  <header class="top">
+    <h1>New releases on sale</h1>
+    <select id="mk" aria-label="Region"></select>
+  </header>
+  <nav class="nav" aria-label="Pages"><a href="index.html">All deals</a><a href="game-pass.html">Game Pass</a><a href="ending-soon.html">Ending soon</a><a href="new-releases.html" aria-current="page">New releases</a><a href="about.html">About</a></nav>
+  <p class="sub">Games released in the last year that already have a discount.</p>
+  <div class="layout">
+    <aside id="side" class="side" aria-label="Genres"><h2>Genres</h2><div id="genres"></div></aside>
+    <div class="content">
+      <button id="gtoggle" class="gtoggle" type="button">Genres: All</button>
+      <div class="tools">
+        <input id="q" type="search" placeholder="Search games" aria-label="Search games">
+        <select id="min" aria-label="Minimum discount">
+          <option value="0">Any discount</option><option value="25">25% or more</option>
+          <option value="50">50% or more</option><option value="75">75% or more</option>
+          <option value="90">90% or more</option>
+        </select>
+        <select id="sort" aria-label="Sort">
+          <option value="pct">Biggest discount</option><option value="price">Lowest price</option>
+          <option value="rc">Best selling (by rating count)</option><option value="new">Newest releases</option>
+          <option value="end">Ending soon</option><option value="name">Name</option>
+        </select>
+      </div>
+      <p id="meta" role="status"></p>
+      <main id="grid"></main>
+      <nav id="pager" class="pager" hidden aria-label="Result pages">
+        <button id="prev">Previous</button><span id="pg"></span><button id="next">Next</button>
+      </nav>
+    </div>
+  </div>
+  <footer class="foot">Not affiliated with Microsoft or Xbox. Xbox and Game Pass are trademarks of Microsoft. Prices come from the Xbox store and can change, so check the store before you buy. <a href="about.html">About this site</a></footer>
+</div>
+<noscript>This site needs JavaScript to show the deals.</noscript>
+<script src="site.js"></script>
+</body>
+</html>
