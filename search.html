@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search Xbox games | Xbox Deals</title>
+<meta name="description" content="Search any game on the Xbox store and see its price.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Search</h1>
+    <select id="mk" aria-label="Region"></select>
+  </header>
+  <nav class="nav" aria-label="Pages"><a href="index.html">All deals</a><a href="game-pass.html">Game Pass</a><a href="ending-soon.html">Ending soon</a><a href="new-releases.html">New releases</a><a href="wishlist.html">Wishlist</a><a href="about.html">About</a></nav>
+  <form id="f" class="gsearch" role="search">
+    <input id="q" type="search" placeholder="Search all Xbox games" aria-label="Search all Xbox games">
+    <button class="primary" type="submit">Search</button>
+  </form>
+  <p id="meta" role="status"></p>
+  <div id="grid"></div>
+  <footer class="foot">Not affiliated with Microsoft or Xbox. Xbox and Game Pass are trademarks of Microsoft. Prices come from the Xbox store and can change, so check the store before you buy. <a href="about.html">About this site</a></footer>
+</div>
+<noscript>This site needs JavaScript.</noscript>
+<script src="common.js"></script>
+<script src="search.js"></script>
+</body>
+</html>

@@ -14,14 +14,18 @@
     <h1>New releases on sale</h1>
     <select id="mk" aria-label="Region"></select>
   </header>
-  <nav class="nav" aria-label="Pages"><a href="index.html">All deals</a><a href="game-pass.html">Game Pass</a><a href="ending-soon.html">Ending soon</a><a href="new-releases.html" aria-current="page">New releases</a><a href="about.html">About</a></nav>
+  <nav class="nav" aria-label="Pages"><a href="index.html">All deals</a><a href="game-pass.html">Game Pass</a><a href="ending-soon.html">Ending soon</a><a href="new-releases.html" aria-current="page">New releases</a><a href="wishlist.html">Wishlist</a><a href="about.html">About</a></nav>
+  <form class="gsearch" action="search.html" method="get" role="search">
+    <input name="q" type="search" placeholder="Search all Xbox games" aria-label="Search all Xbox games">
+    <button class="primary" type="submit">Search</button>
+  </form>
   <p class="sub">Games released in the last year that already have a discount.</p>
   <div class="layout">
     <aside id="side" class="side" aria-label="Genres"><h2>Genres</h2><div id="genres"></div></aside>
     <div class="content">
       <button id="gtoggle" class="gtoggle" type="button">Genres: All</button>
       <div class="tools">
-        <input id="q" type="search" placeholder="Search games" aria-label="Search games">
+        <input id="q" type="search" placeholder="Filter these deals" aria-label="Filter these deals">
         <select id="min" aria-label="Minimum discount">
           <option value="0">Any discount</option><option value="25">25% or more</option>
           <option value="50">50% or more</option><option value="75">75% or more</option>
@@ -43,6 +47,7 @@
   <footer class="foot">Not affiliated with Microsoft or Xbox. Xbox and Game Pass are trademarks of Microsoft. Prices come from the Xbox store and can change, so check the store before you buy. <a href="about.html">About this site</a></footer>
 </div>
 <noscript>This site needs JavaScript to show the deals.</noscript>
+<script src="common.js"></script>
 <script src="site.js"></script>
 </body>
 </html>
