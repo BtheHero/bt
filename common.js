@@ -1,9 +1,10 @@
 (function () {
   'use strict';
   var XDC = window.XDC = {
-    // Paste your Apps Script web app URL (it ends with /exec) to turn on search across every Xbox game
-    // and live prices on the wishlist page. Leave empty to run without them.
-    API_URL: 'https://script.google.com/macros/s/AKfycbwaQHyIuM85IHi2otwUZQVyzAL7tHJJJ9S5WNZJ6dmadoBS_hbfUTlCss1cNVW1k5DB/exec',
+    // Paste the address of your Cloudflare worker (https://<name>.<account>.workers.dev) here to turn on search
+    // across every Xbox game and live prices on the wishlist page. Without a worker you can paste the Apps Script
+    // web app address (ends with /exec) instead. Leave empty to run without them.
+    API_URL: 'xbox-proxy.ilyasbelloutix.workers.dev',
     DATA_BASE: 'data/', // folder with the region files written by the publisher (US.json, GB.json, ...)
     MARKETS: [['US','United States'],['GB','United Kingdom'],['CA','Canada'],['AU','Australia'],['DE','Germany'],['FR','France'],
       ['ES','Spain'],['IT','Italy'],['NO','Norway'],['SE','Sweden'],['DK','Denmark'],['BR','Brazil'],['MX','Mexico'],['JP','Japan'],
