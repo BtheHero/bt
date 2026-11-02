@@ -20,7 +20,9 @@
       if (id !== runId) return;
       $('meta').textContent = e.message === 'not-configured'
         ? 'Search is not set up yet. The site owner needs to add the web app address in common.js.'
-        : 'Search failed: ' + e.message;
+        : e.name === 'TypeError'
+          ? 'Search could not connect. If you use a tracking blocker or strict privacy settings, try turning it off for this site.'
+          : 'Search failed: ' + e.message;
     });
   }
 
