@@ -3,7 +3,7 @@
   var XDC = window.XDC = {
     // Paste your Apps Script web app URL (it ends with /exec) to turn on search across every Xbox game
     // and live prices on the wishlist page. Leave empty to run without them.
-    API_URL: 'https://script.google.com/macros/s/AKfycby8bpaMZLUo9Pf7YroJHJVLj_X0BS-Q9I6htmSYNrTmys-8B0l5LABjGuIxCr9d2pfR/exec',
+    API_URL: 'https://script.google.com/macros/s/AKfycbwaQHyIuM85IHi2otwUZQVyzAL7tHJJJ9S5WNZJ6dmadoBS_hbfUTlCss1cNVW1k5DB/exec',
     DATA_BASE: 'data/', // folder with the region files written by the publisher (US.json, GB.json, ...)
     MARKETS: [['US','United States'],['GB','United Kingdom'],['CA','Canada'],['AU','Australia'],['DE','Germany'],['FR','France'],
       ['ES','Spain'],['IT','Italy'],['NO','Norway'],['SE','Sweden'],['DK','Denmark'],['BR','Brazil'],['MX','Mexico'],['JP','Japan'],
